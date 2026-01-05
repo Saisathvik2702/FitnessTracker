@@ -1,0 +1,83 @@
+/* PAGE */
+.exercise-page {
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* BUTTONS ROW */
+  .exercise-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+  }
+  
+  .exercise-btn {
+    padding: 10px 20px;
+    border: 1px solid #00ff9d;
+    background: #1a1a1a;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #111;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .exercise-btn:hover {
+    background: #00ff9d;
+    color: #111;
+  }
+  
+  .exercise-btn.active {
+    background: #00ff9d;
+    color: #111;
+  }
+  
+  /* SELECTED BOX */
+  .exercise-box {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 35px;
+    border: 1px solid #00ff9d;
+    border-radius: 12px;
+    background: #1a1a1a;
+  }
+  
+  /* LOTTIE SIZE */
+  .exercise-lottie {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .lottie-label {
+
+    font-size: 1.1rem;
+    text-align: center;
+    color: #00ff9d;
+    font-weight: 600;
+  }
+  
+
+  .exercise-info {
+    text-align: left;
+    max-width: 350px;
+  }
+  
+  .exercise-info ul {
+    margin-top: 10px;
+    padding-left: 18px;
+  }
+  
+  .exercise-info li {
+    margin-bottom: 6px;
+    font-size: 1rem;
+  }
+  
+  .note {
+    margin-top: 15px;
+    color: #ccc;
+  }
+  

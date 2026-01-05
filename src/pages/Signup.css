@@ -1,0 +1,85 @@
+/* PAGE WRAPPER */
+.signup-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    padding-top: 10px; /* so navbar doesn't overlap */
+  }
+  
+  /* SIGNUP BOX */
+  .signup-container {
+    width: 90%;
+    max-width: 420px;
+    padding: 25px;
+    background: #1e1e1e;
+    border: 1px solid #00ff9d;
+    border-radius: 14px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* HEADING */
+  .signup-container h2 {
+    text-align: center;
+    color: #00ff9d;
+    margin-bottom: 20px;
+  }
+  
+  /* LABELS */
+  .signup-container label {
+    font-weight: 600;
+    color: #72ffcb;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* INPUTS */
+  .signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 14px;
+    border-radius: 8px;
+    background: #262626;
+    border: 1px solid #00c169;
+    color: white;
+  }
+  
+  .signup-container input:focus {
+    border-color: #00ff9d;
+    background: #333;
+  }
+  
+  /* BUTTON */
+  .signup-container button {
+    width: 100%;
+    padding: 12px;
+    background: #00c169;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 15px;
+  }
+  
+  .signup-container button:hover {
+    background: #009e52;
+  }
+  
+  /* LOGIN SWITCH */
+  .signup-text {
+    text-align: center;
+    margin-top: 12px;
+    color: #ccc;
+  }
+  
+  .signup-text span {
+    color: #00ff9d;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,145 @@
+/* MAIN LAYOUT — THREE COLUMNS */
+.workouts-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;   /* LEFT | CENTER | RIGHT */
+    gap: 25px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+    color: white;
+  }
+  
+  /* PANEL BOXES */
+  .calendar-panel,
+  .tracker-panel,
+  .summary-panel {
+    background: #111;
+    border: 1px solid #00ff9d;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  /* HEADINGS */
+  .calendar-panel h2,
+  .tracker-panel h2,
+  .summary-panel h2,
+  .log-list h3 {
+    color: #00ff9d;
+    margin-bottom: 15px;
+  }
+  
+  /* DATE PICKER */
+  .date-picker {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #1e1e1e;
+    border: 1px solid #00c169;
+    color: white;
+  }
+  
+  /* HISTORY ITEMS */
+  .history-box {
+    margin-top: 15px;
+  }
+  
+  .history-item {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #00c169;
+    border-radius: 8px;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* EMPTY STATE */
+  .empty {
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* FORM GRID (CENTER PANEL INPUTS) */
+  .input-row-full {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* LABELS */
+  .input-group label {
+    color: #72ffcb;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* INPUTS + SELECTS */
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #1e1e1e;
+    border: 1px solid #00c169;
+    color: white;
+  }
+  
+  .input-group input::placeholder,
+  .input-group select {
+    color: #aaa;
+  }
+  
+  /* ADD BUTTON */
+  .btn-add {
+    width: 100%;
+    padding: 12px;
+    background: #00c169;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-add:hover {
+    background: #00ff9d;
+  }
+  
+  /* TODAY'S LOG */
+  .log-list .log-item {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #00c169;
+    border-radius: 8px;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .log-list strong {
+    color: #ffffff;
+  }
+  
+  /* SUMMARY PANEL */
+  .summary-card {
+    background: #1a1a1a;
+    border: 1px solid #00c169;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .summary-card h3 {
+    color: #72ffcb;
+  }
+  
+  .summary-card .number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ff9d;
+  }
+  

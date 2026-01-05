@@ -1,0 +1,90 @@
+/* === Generic styling for food cards (used by both components) === */
+
+.food-item,
+.selected-food {
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+/* Soft dark card for food list items */
+.food-item {
+  background: #252525;           /* soft dark grey, not pitch black */
+  border: 1px solid #00c169;     /* soft green border */
+  color: #f2f2f2;
+}
+
+.food-item h4 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.food-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d0d0d0;
+}
+
+.food-item:hover {
+  background: #2f2f2f;
+}
+
+/* Selected food card on the right side */
+.selected-food {
+  background: #23342b;           /* subtle greenish dark */
+  border-left: 4px solid #00ff9d;
+  border: 1px solid #00c169;
+  color: #f5f5f5;
+}
+
+.selected-food h4 {
+  margin: 0 0 6px;
+}
+
+/* Qty row */
+.qty-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.qty-row label {
+  font-size: 0.9rem;
+}
+
+.qty-row input {
+  width: 70px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #00c169;
+  background: #1f1f1f;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.qty-row input:focus {
+  outline: none;
+  border-color: #00ff9d;
+  background: #292929;
+}
+
+/* Remove button */
+.remove-btn {
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #c40000;
+}

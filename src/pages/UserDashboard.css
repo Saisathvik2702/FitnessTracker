@@ -1,0 +1,338 @@
+/* --------------------------------------------------
+   MAIN PAGE WRAPPER
+-------------------------------------------------- */
+.dashboard-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  padding: 20px 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+
+/* --------------------------------------------------
+   HEADER & LOGOUT
+-------------------------------------------------- */
+.logout-btn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  padding: 10px 18px;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.logout-btn:hover {
+  background: #d10000;
+}
+
+.dashboard-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.dashboard-subtitle {
+  margin-bottom: 20px;
+  color: #72ffcb;
+}
+
+
+/* --------------------------------------------------
+   WORKOUT SCORE CARD
+-------------------------------------------------- */
+.highlight-card {
+  background: #111;
+  border: 2px solid #00ff9d;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.highlight-card h2 {
+  color: #00ff9d;
+}
+.highlight-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ff9d;
+}
+.highlight-unit {
+  color: #72ffcb;
+}
+
+
+/* --------------------------------------------------
+   3 SUMMARY CARDS
+-------------------------------------------------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #111;
+  border: 1px solid #00c169;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #72ffcb;
+}
+.stat-value {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff9d;
+}
+
+
+/* --------------------------------------------------
+   LAYOUT BELOW SUMMARY: 
+   CALENDAR (LEFT) + LOGS (RIGHT)
+-------------------------------------------------- */
+.bottom-layout {
+  display: flex;
+  gap: 25px;
+}
+
+.calendar-wrapper {
+  flex: 1.4;
+}
+
+.logs-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* --------------------------------------------------
+   CALENDAR STYLING
+-------------------------------------------------- */
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  border: 1px solid #00c169;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.calendar-nav button {
+  padding: 6px 10px;
+  background: #00c169;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.calendar-nav button:hover {
+  background: #009e52;
+}
+
+.calendar-nav h2 {
+  color: #00ff9d;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-header {
+  text-align: center;
+  font-weight: bold;
+  color: #72ffcb;
+}
+
+.calendar-empty {
+  height: 60px;
+}
+
+.calendar-day {
+  background: #111;
+  border: 1px solid #00c169;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 70px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calendar-day:hover {
+  background: #1a1a1a;
+}
+
+.today {
+  border: 2px solid #00ff9d !important;
+}
+
+.selected-day {
+  background: #003321;
+}
+
+.date-number {
+  font-size: 1rem;
+  color: #00ff9d;
+  font-weight: bold;
+}
+
+/* green dot */
+.activity-dot {
+  width: 9px;
+  height: 9px;
+  background: #00ff9d;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+}
+
+/* + ADD BUTTON INSIDE CALENDAR CELL */
+.add-btn {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: none;
+  background: #00c169;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background: #009e52;
+}
+
+
+/* --------------------------------------------------
+   WORKOUT + FOOD LOG SECTIONS (RIGHT SIDE)
+-------------------------------------------------- */
+.log-section {
+  background: #111;
+  border: 1px solid #00c169;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.log-title {
+  color: #00ff9d;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.log-card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #00c169;
+  font-size: 0.95rem;
+}
+
+.log-empty {
+  color: #bbb;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 15px 0;
+}
+
+
+/* --------------------------------------------------
+   POPUP MODAL (for activity input)
+-------------------------------------------------- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  border: 2px solid #00ff9d;
+  border-radius: 12px;
+  padding: 25px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content h3 {
+  color: #00ff9d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  border: 1px solid #00c169;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  background: #00c169;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.close-btn {
+  width: 100%;
+  padding: 12px;
+  background: #555;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 900px) {
+  .bottom-layout {
+    flex-direction: column;
+  }
+}

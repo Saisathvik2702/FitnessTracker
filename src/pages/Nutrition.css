@@ -1,0 +1,277 @@
+/* MAIN CONTAINER */
+.nutrition-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* HEADERS */
+  .nutrition-container h1 {
+    color: #00ff9d;
+    margin-bottom: 20px;
+  }
+  
+  .nutrition-container h2 {
+    color: #72ffcb;
+  }
+  
+  /* DATE PICKER */
+  .date-box {
+    background: #1b1b1b;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #00c169;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .date-box label {
+    font-weight: bold;
+    color: #00ff9d;
+  }
+  
+  .date-box input {
+    padding: 8px;
+    background: #222;
+    border: 1px solid #00c169;
+    color: white;
+    border-radius: 6px;
+  }
+  
+  /* DAILY SUMMARY */
+  .daily-summary {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #00c169;
+    margin-bottom: 25px;
+  }
+  
+  .totals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  
+  .total-card {
+    background: #1b1b1b;
+    border: 1px solid #00c169;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .total-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ff9d;
+  }
+  
+  .total-label {
+    font-size: 13px;
+    color: #bbb;
+  }
+  
+  /* MAIN GRID */
+  .nutrition-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .nutrition-sections {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* FOOD LIST */
+  .food-list-section {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #00c169;
+  }
+  
+  .food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b1b1b;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #00c169;
+    margin-bottom: 10px;
+  }
+  
+  .food-item h4 {
+    margin: 0 0 5px 0;
+    color: #72ffcb;
+  }
+  
+  .food-macros {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  /* ADD BUTTON */
+  .btn-add-nutrition {
+    padding: 8px 14px;
+    background: #00c169;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    min-width: 60px;
+    transition: 0.2s;
+  }
+  
+  .btn-add:hover {
+    background: #009e52;
+  }
+  
+  /* CUSTOM FOOD */
+  .btn-custom {
+    width: 100%;
+    padding: 10px;
+    background: #00ff9d;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .custom-food-box {
+    background: #1b1b1b;
+    border: 1px solid #00c169;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .custom-food-box input {
+    width: 100%;
+    background: #222;
+    border: 1px solid #00c169;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .macro-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background: #00c169;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+  }
+  
+  /* DAILY LOG */
+  .daily-log-section {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #00c169;
+  }
+  
+  .log-item {
+    background: #1b1b1b;
+    border: 1px solid #00c169;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .qty-label {
+    display: block;
+    color: #00ff9d;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  .qty-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .qty-buttons button {
+    background: #00ff9d;
+    color: black;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .qty-buttons button:hover {
+    background: #00c169;
+  }
+  
+  .btn-remove {
+    background: #ff4d4d;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .empty-log {
+    text-align: center;
+    color: #999;
+    padding: 20px 0;
+  }
+  
+
+  .qty-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .qty-btn {
+    background: #00c169;
+    border: 1px solid #00ff9d;
+    color: black;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .qty-btn:hover {
+    background: #00ff9d;
+    color: #111;
+  }
+  
+  .qty-value {
+    color: #00ff9d;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  

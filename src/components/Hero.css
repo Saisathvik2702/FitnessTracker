@@ -1,0 +1,65 @@
+/* SECTION BACKGROUND */
+.hero {
+  padding: 40px 20px;     /* was 80px → reduced hero height */
+  background: linear-gradient(145deg, #1a1a1a, #222, #1a1a1a);
+  color: white;
+}
+
+/* FLEX LAYOUT */
+.hero-content {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* TEXT SIDE — unchanged */
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #00ff9d;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #d0d0d0;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* ⭐ LOTTIE — MAKE AS BIG AS POSSIBLE */
+.hero-lottie {
+  width: 2000px;    /* increased width */
+  height: 250px;   /* increased height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottie-anim {
+  width: 100%;
+  height: 100%;
+}
+
+/* GET STARTED BUTTON */
+.get-started-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  background: #00ff9d;
+  border-radius: 10px;
+  border: 2px solid #00ff9d;
+  transition: 0.25s ease-in-out;
+}
+
+.get-started-btn:hover {
+  background: #00c774;
+  border-color: #00c774;
+  transform: translateY(-3px);
+}
+

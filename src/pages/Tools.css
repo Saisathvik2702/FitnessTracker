@@ -1,0 +1,294 @@
+/* ============================== */
+/*      TOOLS PAGE STYLING        */
+/* ============================== */
+
+.fitness-tools-container {
+  margin-top: 40px;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+.fitness-tools-container h1 {
+  color: #00ff9d;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.tools-description {
+  color: #cfcfcf;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+/* GRID */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  padding: 10px;
+}
+
+/* TOOL CARDS */
+.tool-card {
+  background: #1f1f1f;
+  border: 1px solid #2e2e2e;
+  padding: 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #e5e5e5;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(0, 255, 157, 0.07);
+}
+
+.tool-card:hover {
+  background: #00c169;
+  color: #111;
+  border-color: #00ff9d;
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.tool-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+/* TITLE INSIDE CARD */
+.tool-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #00ff9d;
+}
+
+/* CARD DESCRIPTION */
+.tool-card p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+  .tool-card {
+    padding: 18px;
+  }
+
+  .tool-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
+/* =============================== */
+/*   (ALL OTHER SECTIONS UNTOUCHED)
+   YOUR ORIGINAL CSS BELOW THIS
+   NOTHING WAS CHANGED EXCEPT TOOLS
+   =============================== */
+
+/* GLOBAL DARK SECTION STYLE */
+.section {
+  margin-top: 40px;
+  color: #e5e5e5;
+}
+
+/* MAIN CALC BOX */
+.calc-box {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid #2c2c2c;
+  box-shadow: 0 0 12px rgba(0, 255, 157, 0.12);
+  max-width: 650px;
+}
+
+/* TITLE */
+.calc-box h2 {
+  color: #00ff9d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* INPUT FIELDS */
+.calc-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2b2b2b;
+  color: #e5e5e5;
+}
+
+.calc-box input::placeholder {
+  color: #888;
+}
+
+/* BUTTON */
+.calc-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #00c169;
+  border-radius: 10px;
+  border: 1px solid #00ff9d;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.calc-box button:hover {
+  background: #009e52;
+}
+
+/* RESULT */
+.result {
+  margin-top: 15px;
+  padding: 10px;
+  background: #262626;
+  border-left: 4px solid #00ff9d;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+/* DESCRIPTION BOX */
+.desc-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: #151515;
+  border: 1px solid #2f2f2f;
+  border-radius: 12px;
+}
+
+.desc-title {
+  margin-bottom: 10px;
+  color: #00ff9d;
+}
+
+.desc-text {
+  color: #cfcfcf;
+  margin-bottom: 15px;
+}
+
+/* LIST INSIDE DESCRIPTION */
+.desc-section h4 {
+  margin-bottom: 8px;
+  color: #00e48a;
+}
+
+.desc-section ul li {
+  margin: 6px 0;
+  color: #d5d5d5;
+}
+
+/* FOOTER TEXT */
+.desc-footer {
+  margin-top: 15px;
+  color: #9f9f9f;
+  font-size: 0.95rem;
+}
+
+/* DAILY CALORIES PAGE */
+.daily-cal-title {
+  text-align: center;
+  color: #00ff9d;
+  margin-bottom: 25px;
+}
+
+.daily-flex {
+  display: flex;
+  gap: 20px;
+}
+
+.daily-left,
+.daily-right {
+  width: 50%;
+}
+
+.daily-heading {
+  color: #00e48a;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.daily-total {
+  margin-top: 20px;
+  color: #00ff9d;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* SELECT DROPDOWNS */
+.calc-box select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2b2b2b;
+  color: #e5e5e5;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.calc-box select:focus {
+  outline: none;
+  border-color: #00ff9d;
+  box-shadow: 0 0 8px rgba(0, 255, 157, 0.3);
+}
+
+.calc-box select option {
+  background: #1d1d1d;
+  color: #e5e5e5;
+}
+
+/* TWO-COLUMN LAYOUT FOR TOOLS */
+.tool-row {
+  display: flex;
+  gap: 25px;
+}
+
+.tool-col {
+  width: 50%;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .tool-row {
+    flex-direction: column;
+  }
+
+  .tool-col {
+    width: 100%;
+  }
+}
+
+.calc-box label {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  display: block;
+  font-weight: 500;
+  color: #e5e5e5;
+}
+
+.calc-box input,
+.calc-box select {
+  margin-bottom: 12px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  background: transparent;
+  border: 1px solid #00ff9d;
+  color: #00ff9d;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: #00ff9d;
+  color: #111;
+}

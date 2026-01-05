@@ -1,0 +1,83 @@
+/* DARK BACKGROUND FOR ENTIRE LOGIN PAGE */
+body {
+    background: #121212 !important;   /* full dark mode background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center the login box using flex (applies only when login page is visible) */
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    background: #1e1e1e;       /* dark grey box */
+    border: 1px solid #00ff9d; /* neon green */
+    border-radius: 14px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Heading */
+  .login-container h2 {
+    text-align: center;
+    color: #00ff9d;
+    margin-bottom: 20px;
+  }
+  
+  /* Labels */
+  .login-container label {
+    font-weight: 600;
+    color: #72ffcb;
+  }
+  
+  /* Inputs */
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border-radius: 8px;
+    background: #262626;  
+    border: 1px solid #00c169;
+    color: white;
+  }
+  
+  .login-container input:focus {
+    border-color: #00ff9d;
+    background: #333;
+  }
+  
+  /* Buttons */
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background: #00c169;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .login-container button:hover {
+    background: #009e52;
+  }
+  
+  /* Signup toggle */
+  .toggle-text {
+    text-align: center;
+    margin-top: 10px;
+    color: #ccc;
+  }
+  
+  .toggle-text span {
+    color: #00ff9d;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
